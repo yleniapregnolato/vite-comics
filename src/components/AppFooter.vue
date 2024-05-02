@@ -29,8 +29,10 @@ footer {
 
     .info-dc {
         height: 45vh;
-        background-image: url(../assets/img/footer-bg.jpg);
-        background-size: cover;
+        background-image:url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
+        background-size: 35%,cover;
+        background-repeat: no-repeat;
+        background-position: right 150px top -95px, center; 
     }
 
 
