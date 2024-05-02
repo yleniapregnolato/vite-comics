@@ -2,6 +2,48 @@
 export default {
     data() {
         return {
+            menu: [
+                {
+                    title: "CHARACTERS",
+                    isActive: false
+                },
+                {
+                    title: "COMICS",
+                    isActive: false
+                },
+                {
+                    title: "MOVIES",
+                    isActive: false
+                },
+                {
+                    title: "TV",
+                    isActive: false
+                },
+                {
+                    title: "GAMES",
+                    isActive: false
+                },
+                {
+                    title: "COLLECTIBLES",
+                    isActive: false
+                },
+                {
+                    title: "VIDEOS",
+                    isActive: false
+                },
+                {
+                    title: "FANS",
+                    isActive: false
+                },
+                {
+                    title: "NEWS",
+                    isActive: false
+                },
+                {
+                    title: "SHOP",
+                    isActive: false
+                },
+            ]
 
         }
     }
@@ -14,16 +56,9 @@ export default {
             <img src="../assets/img/dc-logo.png" alt="header-logo">
         </div>
         <ul>
-            <li><a href="">CHARACTERS</a></li>
-            <li><a href="">COMICS</a></li>
-            <li><a href="">MOVIES</a></li>
-            <li><a href="">TV</a></li>
-            <li><a href="">GAMES</a></li>
-            <li><a href="">COLLECTIBLES</a></li>
-            <li><a href="">VIDEOS</a></li>
-            <li><a href="">FANS</a></li>
-            <li><a href="">NEWS</a></li>
-            <li><a href="">SHOP</a></li>
+            <li v-for="item in menu">
+                <a href="" :class="{ active: item.isActive }">{{ item.title }}</a>
+            </li>
         </ul>
     </header>
 </template>
