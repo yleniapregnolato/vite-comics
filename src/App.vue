@@ -8,16 +8,16 @@ export default {
     AppHeader,
     AppMain,
     AppFooter
-}
+  }
 }
 </script>
 
 <template>
-  <h1>hello word</h1>
   <AppHeader />
   <AppMain />
   <AppFooter />
 </template>
 
 <style lang="scss">
+
 </style>
