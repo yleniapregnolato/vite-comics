@@ -70,7 +70,14 @@ export default {
 header {
     height: 16vh;
     @include flex (row, space-between, center)
+    font-weight: bold;
 }
+
+// hr {
+//     margin-top: 30px;
+//     border: 2px solid $primary-color;
+//     display: none;
+// }
 
 ul {
     @include flex(row, space-between, center);
@@ -79,13 +86,21 @@ ul {
     margin-right: 80px;
     font-size: 0.9rem;
 
+
+    li {
+        line-height: 16vh;
+        border-bottom: 5px solid transparent;
+        &:hover {
+            border-color: $primary-color;
+            &a {
+                color: $primary-color;
+            }
+        }
+    }
+
     a {
         text-decoration: none;
         color: $header-text-color;
-
-        &:hover {
-            color: $primary-color;
-        }
     }
 }
 
