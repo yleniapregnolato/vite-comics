@@ -1,10 +1,11 @@
 <script>
+import AppSectionMain from './AppSectionMain.vue';
+
 export default {
     data() {
-        return {
-
-        }
-    }
+        return {};
+    },
+    components: { AppSectionMain }
 }
 </script>
 
@@ -16,7 +17,7 @@ export default {
         </section>
 
         <!-- merchandising-section -->
-        <section class="blue-section"></section>
+        <AppSectionMain />
 
         <!--  -->
     </main>
@@ -37,8 +38,5 @@ export default {
         padding-top: 40px;
     }
 }
-.blue-section {
-    height: 16vh;
-    background-color: $primary-color;
-}
+
 </style>
