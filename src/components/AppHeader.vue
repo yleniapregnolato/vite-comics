@@ -52,14 +52,19 @@ export default {
 
 <template>
     <header>
+        <!-- logo -->
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="header-logo">
         </div>
+        <!-- /logo -->
+
+        <!-- menu -->
         <ul>
             <li v-for="item in menu">
                 <a href="" :class="{ active: item.isActive }">{{ item.title }}</a>
             </li>
         </ul>
+        <!-- /menu -->
     </header>
 </template>
 
@@ -68,16 +73,10 @@ export default {
 @use "../style/partials/variables" as *;
 
 header {
-    height: 16vh;
-    @include flex (row, space-between, center)
-    font-weight: bold;
+    // height: 16vh;
+    @include flex (row, space-between, center);
+    font-weight: bold;  
 }
-
-// hr {
-//     margin-top: 30px;
-//     border: 2px solid $primary-color;
-//     display: none;
-// }
 
 ul {
     @include flex(row, space-between, center);
@@ -86,9 +85,8 @@ ul {
     margin-right: 80px;
     font-size: 0.9rem;
 
-
     li {
-        line-height: 16vh;
+        line-height: 12.5vh;
         border-bottom: 5px solid transparent;
         &:hover {
             border-color: $primary-color;

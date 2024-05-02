@@ -10,7 +10,15 @@ export default {
 
 <template>
     <main>
-        <h2> --> Content Goes here <-- </h2>
+        <!-- hero section -->
+        <section class="hero">
+            <h2> --> Content Goes here <-- </h2>
+        </section>
+
+        <!-- merchandising-section -->
+        <section class="blue-section"></section>
+
+        <!--  -->
     </main>
 </template>
 
@@ -18,7 +26,7 @@ export default {
 @use "../style/partials/mixin" as *;
 @use "../style/partials/variables" as *;
 
-main {
+.hero {
     height: 16vh;
     background-color: $main-background-color;
     color: white;
@@ -28,5 +36,9 @@ main {
         padding-left: 150px;
         padding-top: 40px;
     }
+}
+.blue-section {
+    height: 16vh;
+    background-color: $primary-color;
 }
 </style>
