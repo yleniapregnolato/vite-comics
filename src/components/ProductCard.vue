@@ -23,5 +23,6 @@ export default {
     }
 
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 </style>
