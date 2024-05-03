@@ -62,9 +62,9 @@ export default {
 footer {
     .info-dc {
         background-image: url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
-        background-size: 35%, cover;
+        background-size: 40%, cover;
         background-repeat: no-repeat;
-        background-position: right 150px top -95px, center;
+        background-position: right 90px top -60px, center;
     }
 
     .container {
@@ -76,7 +76,8 @@ footer {
             @include flex(column, flex-start, flex-start, nowrap);
             width: calc(100% / 3);
             gap: 10px;
-            padding: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
 
             h2 {
                 color: white;
