@@ -17,6 +17,8 @@ export default {
     <main>
         <!-- products section -->
         <section class="hero">
+            <div class="hero-container">
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col" v-for="prod in products">
@@ -39,6 +41,12 @@ export default {
 <style scoped lang="scss">
 @use "../style/partials/mixin" as *;
 @use "../style/partials/variables" as *;
+
+.hero-container {
+    background-image: url(../assets/img/jumbotron.jpg);
+    height: 50vh;
+    background-size: cover;
+}
 
 .hero {
     background-color: $main-background-color;
