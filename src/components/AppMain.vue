@@ -1,5 +1,4 @@
 <script>
-import AppSectionMain from './AppSectionMain.vue';
 import { productsArray } from "../assets/data/products";
 import ProductCard from './ProductCard.vue';
 
@@ -9,7 +8,7 @@ export default {
             products: productsArray
         };
     },
-    components: { AppSectionMain, ProductCard }
+    components: { ProductCard }
 }
 </script>
 
@@ -17,7 +16,7 @@ export default {
     <main>
         <!-- products section -->
         <section class="hero">
-            <div class="hero-container">
+            <div class="jumbotron-container">
             </div>
             <div class="container">
                 <div class="row">
@@ -31,10 +30,6 @@ export default {
         </section>
 
         <!-- /products section -->
-
-        <!-- merchandising-section -->
-        <AppSectionMain />
-
     </main>
 </template>
 
@@ -42,7 +37,7 @@ export default {
 @use "../style/partials/mixin" as *;
 @use "../style/partials/variables" as *;
 
-.hero-container {
+.jumbotron-container {
     background-image: url(../assets/img/jumbotron.jpg);
     height: 50vh;
     background-size: cover;

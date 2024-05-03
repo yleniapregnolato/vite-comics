@@ -95,8 +95,6 @@ footer {
 
 
     }
-
-
     .icons {
         height: 10vh;
         background-color: $footer-background-color;
