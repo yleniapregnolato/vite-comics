@@ -90,7 +90,7 @@ ul {
         border-bottom: 5px solid transparent;
         &:hover {
             border-color: $primary-color;
-            &a {
+            & a {
                 color: $primary-color;
             }
         }
