@@ -62,7 +62,7 @@ export default {
 
     ul {
         @include flex(row, space-between, center, nowrap);
-        gap: 5px;
+        gap: 8px;
         list-style-type: none;
         padding-top: 20px;
         padding-bottom: 20px;
